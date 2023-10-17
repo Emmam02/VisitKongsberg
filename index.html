@@ -9,6 +9,8 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
 </head>
 
 <body>
@@ -17,33 +19,30 @@
         <div class="bannerText">
             <h1>Visit Kongsberg</h1>
             <p>Der solen maler historier på fjellene, og tradisjon møter innovasjon i hver gatestein.</p>
-            <div class="bannerButton">
-                <a href="#"><span></span>Find out</a>
-                <a href="#"><span></span>Read more</a>
-            </div>
         </div>
     </section>
 
     <div id="sideNav">
         <nav>
             <ul>
-                <li><a href="#">Hjem</a></li>
-                <li><a href="#">Historie</a></li>
-                <li><a href="#">Aktiviteter</a></li>
-                <li><a href="#">Resturanter</a></li>
-                <li><a href="#">Overnatting</a></li>
+                <li><a href="#banner">Hjem</a></li>
+                <li><a href="#history">Historie</a></li>
+                <li><a href="#activities">Aktiviteter</a></li>
+                <li><a href="#resturants">Resturanter</a></li>
+                <li><a href="#accommodations">Overnatting</a></li>
             </ul>
         </nav>
     </div>
     <div id="menuButton" onclick="menuButtonClicked()">
         <img src="images/menu.png" id="menu">
     </div>
+    <hr>
 
     <!--Historie-->
     <section id="history">
         <div class="titleText">
             <p>HISTORIE</p>
-            <h1>Kongsberg sin historie</h1>
+            <h1>Kongsbergs historie</h1>
         </div>
         <div class="historyBox">
             <div class="histories">
@@ -95,27 +94,210 @@
             </div>
         </div>
     </section>
+    <hr>
 
-<!--Aktiviteter-->
-<section id="activities">
-<div class="titleText">
-    <p>AKTIVITETER</p>
-    <h1>Kongsbergs kuleste aktiviteter</h1>
-    <div class="activitiesBox">
-        <div class="activity">
-            <img src="images/skibakke.png">
+    <!--Aktiviteter-->
+    <section id="activities">
+        <div class="titleText">
+            <p>AKTIVITETER</p>
+            <h1>Populære aktiviteter</h1>
         </div>
-        <div class="activity">BAdebukse</div>
-        <div class="activity">TRampoline gangster</div>
+        <div class="activitiesBox">
+            <div class="activity">
+                <img src="images/skibakke.png">
+                <div class="overlay"></div>
+                <div class="textOverlay">
+                    <div>
+                        <h3>Kongsberg Skisenter</h3> <sub>er
+                            populært blant både lokalbefolkningen
+                            og besøkende. Senteret tilbyr ski-
+                            og snowboardmuligheter, samt
+                            langrennsløyper. I sommersesongen
+                            kan området brukes til fotturer og sykling.
+                        </sub>
+                    </div>
+                </div>
+            </div>
+            <div class="activity">
+                <img src="images/gruvesafari.png">
+                <div class="overlay"></div>
+                <div class="textOverlay">
+                    <div>
+                        <h3>Kongsberg Sølvgruver</h3><sub>
+                            er en historisk attraksjon
+                            som tiltrekker seg mange
+                            besøkende. Gruvene gir et
+                            innblikk i Norges rike gruvearv,
+                            og det er guidede turer som tar deg
+                            gjennom gruvene for å utforske historien
+                            og arkitekturen.</sub>
+                    </div>
+                </div>
+            </div>
+            <div class="activity">
+                <img src="images/bergverksmuseet.png">
+                <div class="overlay"></div>
+                <div class="textOverlay">
+                    <div>
+                        <h3>Norsk Bergverksmuseum</h3>
+                        <sub>er nasjonalmuseum for bergverksdrift.
+                            Museet som ligger i Kongsberg sentrum har tilhold i Kongsberg
+                            Sølvverks gamle smeltehytte fra 1844. Museet
+                            viser gjennom forskjellige utstillinger hele
+                            den over 330 år gamle historien til gruvedriften
+                            i Kongsberg</sub>
+                    </div>
+                </div>
+            </div>
+            <div class="activity">
+                <img src="images/energimølla.png">
+                <div class="overlay"></div>
+                <div class="textOverlay">
+                    <div>
+                        <h3>EnergiMølla</h3><sub>
+                            er et musikk -og kulturhus
+                            på Kongsberg som hele året presenterer et
+                            mangfold av sjangere og artister, både lokale,
+                            nasjonale og internasjonale.
+
+                            Hver måned har de også en rekke
+                            faste arrangementer som MiniMølla-
+                            for barn, Pop-Quiz, Pub-Quiz, Jazz Kafé,
+                            UngJam og MingleMølla.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!--Resturanter-->
+
+    <section id="resturants">
+        <div class="titleText">
+            <p>RESTURANTER</p>
+            <h1>Gode resturanter</h1>
+        </div>
+
+        <div class="resturantRow">
+            <div class="resturantColumn">
+                <p>Nila</p><br>
+                <img src="images/nila.png" alt="">
+                <div>Bokstavene "N" og "I" i ordet "Nila"
+                    representerer sameksistensen mellom det
+                    norske og indiske.... et møte mellom eldgamle
+                    indiske smaker og tradisjoner i symbiose med
+                    norske ingredienser. Våre gjester vil befinne
+                    seg i en elegant blå/gull inspirert atmosfære.
+                    Ordet Nila betyr også akkurat det, "blå", en
+                    farge som ofte finnes i naturen, og som har
+                    en viktig plass i indisk kultur og historie</div>
+            </div>
+            <div class="resturantColumn">
+                <p>Jordnær</p><br>
+                <img src="images/jordnær.png" alt="">
+                <div>Jordnær restaurant ønsker å være en kreativ,
+                    nyskapende og bærekraftig restaurant med fokus
+                    på norske, økologiske råvarer så langt det lar
+                    seg gjøre. Vi har 34 sitteplasser inne og en
+                    stor terrasse.
+
+                    Ute på terrassen er du omgitt av et frodig hav
+                    av spiselige planter, urter og blomster som også
+                    brukes flittig inne på kjøkkenet</div>
+            </div>
+            <div class="resturantColumn">
+                <p>Marlenes Bistro</p><br>
+                <img src="images/marlenes.png" alt="">
+                <div>Vi elsker å spise mat, drikke god
+                    drikke og ikke minst å reise. Og
+                    når vi reiser er det en ting som
+                    er i hovedfokus og det er å finne
+                    nye smaker. Og de smakene vi finner
+                    ønsker vi alltid å dele med dere.
+
+                    Menyene er derfor satt sammen av
+                    akkurat dette, smaker vi liker.
+                    Men selvsagt med et bistropreg</div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+
+    <div class="titleText">
+        <p style="margin-top:40px">OVERNATTING</p>
+        <h1>Overnatting i Kongsberg</h1>
     </div>
-</div>
+    <section id="accommodations">
 
+        <div class="accommodation firstAccommodation">
+            <img src="images/clarion.png" alt="Hotel 1">
+            <h2>Clarion Collection Hotel </h2>
+            <p>Adresse: Sildetomta 2-4, 3611 Kongsberg</p>
+            <p>Tlf: 32 29 90 70</p><br>
+            <p>Clarion Collection Hotel
+                Kongsberg ligger i Sølvparken
+                midt i sentrum av Kongsberg.
+                Hotellet har velværeavdeling,
+                restaurant og bar. Frokost,
+                fika og kveldsmat er inkludert hver dag.</p>
+        </div>
 
+        <div class="accommodation">
+            <img src="images/gyldenlove.png" alt="Hotel 2">
+            <h2>Best Westen Plus Gyldenlove</h2>
+            <p>Adresse: Herman Foss gate 1, 3611 Kongsberg</p>
+            <p>Tlf: 32 86 58 00</p><br>
+            <p>
+            <p>Dette uformelle hotellet ligger et steinkast
+                fra Kongsberg jernbanestasjon.
 
-</section>
+                Frokostbuffé og parkering er
+                inkludert i prisen. Hotellet har
+                også treningssenter, møtelokale, bar og en uformell restaurant</p>
+            </p>
+        </div>
 
+        <div class="accommodation">
+            <img src="images/grand.png" alt="Hotel 3">
+            <h2>Quality Hotel Grand</h2>
+            <p>Adresse: Chr. Augusts gate 2, 3611 Kongsberg</p>
+            <p>Tlf: 32 77 28 00</p><br>
+            <p>Quality Hotel Grand er et fullservice
+                konferansehotell beliggende sentralt
+                i Kongsberg. Med kort avstand til
+                byens varierte kulturtilbud.
+                Hotellet har også egen restaurant og bar.</p>
+        </div>
 
+        <div class="accommodation">
+            <img src="images/søstrene.png" alt="Hotel 4">
+            <h2>Søstrene Storaas</h2>
+            <p>Adresse:  Jondalsveien 1530, 3614 Kongsberg</p>
+            <p>Tlf: 32 77 13 00</p><br>
+            <p>Dette landlige, familiedrevne hotellet 
+                ligger på en gård ved foten av Blefjell,
+                 3 minutters gange fra nærmeste busstopp og
+                  4 kilometer fra den vakre Dusanfossen.
 
+                Hotellet tilbyr elegante rom med tregulv, 
+                koselige rom i sovesalstil med køyesenger 
+                samt hytter med kjøkken. </p>
+        </div>
+
+        <div class="accommodation">
+            <img src="images/vandrerhjem.png" alt="Hotel 5">
+            <h2>Kongsberg Vandrerhjem</h2>
+            <p>Adresse: Hasbergs vei 5, 3616 Kongsberg</p>
+            <p>Tlf: 32 73 20 24</p><br>
+            <p>Dette vandrerhjemmet ligger i sentrum av Kongsberg, 
+                2 km fra Kongsberg togstasjon, og har avgiftsfri
+                 parkering og rom med kostnadsfri Wi-Fi og
+                  eget bad med dusj</p>
+        </div>
+
+    </section>
     <script src="script.js"></script>
 </body>
 
